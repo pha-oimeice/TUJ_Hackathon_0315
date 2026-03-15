@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dynamic Menu Bar</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="menu-bar" id="menuBar">
+
+    <div class="logo">⬡ HackathonCorp</div>
+
+    <div class="tab active" data-tab="1">Home</div>
+    <div class="tab" data-tab="2">About</div>
+    <div class="tab" data-tab="3">Services</div>
+    <div class="tab" data-tab="4">Contact</div>
+    <div class="tab" data-tab="5">User</div>
+    <div class="tab" data-tab="6">Hidden Fun Stuff</div>
+
+
+</div>
+
+
+<div class="content">
+
+    <!-- HOME PANEL -->
+    <div class="panel active" id="panel1">
+
+        <div class="galaxy-bg"></div>
+
+        <div class="welcome-banner">
+            <h1>Welcome to <span>HackathonCorp</span></h1>
+            <p>World's first multiversal corporation &mdash; established 2000 B.C.</p>
+            <div class="stats">
+                <div class="stat-pill">10 Trillion+ Employees</div>
+                <div class="stat-pill">1,000 Planets</div>
+                <div class="stat-pill">∞ Dimensions Served</div>
+            </div>
+        </div>
+
+        <div class="carousel-section">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <div class="carousel-slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg/1280px-Pillars_of_creation_2014_HST_WFC3-UVIS_full-res_denoised.jpg" alt="Pillars of Creation">
+                        <div class="slide-caption">Pillars of Creation — Eagle Nebula · HST</div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Hubble_ultra_deep_field.jpg/1280px-Hubble_ultra_deep_field.jpg" alt="Hubble Ultra Deep Field">
+                        <div class="slide-caption">Hubble Ultra Deep Field — 10,000 Galaxies</div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1280px-NGC_4414_%28NASA-med%29.jpg" alt="Spiral Galaxy NGC 4414">
+                        <div class="slide-caption">NGC 4414 — Spiral Galaxy · 62 Million Light-Years Away</div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-btn prev" id="prevBtn">&#8249;</div>
+                <div class="carousel-btn next" id="nextBtn">&#8250;</div>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+    </div>
+
+    <!-- OTHER PANELS -->
+    <!-- ABOUT PANEL -->
+    <div class="panel" id="panel2">
+        <div class="about-page">
+
+            <!-- LEFT SIDEBAR NAV -->
+            <nav class="about-nav">
+                <div class="about-nav-item active" data-about="1">What is HackathonCorp</div>
+                <div class="about-nav-item" data-about="2">Our Objectives</div>
+                <div class="about-nav-item" data-about="3">Our Story</div>
+                <div class="about-nav-item" data-about="4">Our Clients</div>
+            </nav>
+
+            <!-- RIGHT CONTENT AREA -->
+            <div class="about-content">
+
+                <section class="about-section active" id="about1">
+                    <h2 class="about-heading">What is HackathonCorp</h2>
+                    <p class="about-body">HackathonCorp is the universe's premier multiversal innovation conglomerate, operating across 1,000 planets and countless parallel dimensions since 2000 B.C. We accelerate breakthrough ideas — from interplanetary logistics to interdimensional consulting — by connecting the finest minds across space, time, and reality. With over 10 trillion employees, we dissolved the box approximately 3,000 years ago.</p>
+                </section>
+
+                <section class="about-section" id="about2">
+                    <h2 class="about-heading">Our Objectives</h2>
+                    <ul class="about-list">
+                        <li>Pioneer cross-dimensional innovation by funding projects that transcend the limits of known science and conventional commerce.</li>
+                        <li>Build an interplanetary workforce representing every civilisation, species, and sentient entity across the known and unknown multiverse.</li>
+                        <li>Establish sustainable growth frameworks respecting the natural laws of each dimension — without causing more than three (3) extinction-level disruptions per fiscal cycle.</li>
+                    </ul>
+                </section>
+
+                <section class="about-section" id="about3">
+                    <h2 class="about-heading">Our Story</h2>
+                    <p class="about-body">HackathonCorp was founded in 2000 B.C. by visionaries who believed good ideas should not be limited by geography — or physics. What began as a trading post in ancient Mesopotamia expanded beyond the atmosphere when our founders discovered an interdimensional portal in the basement. By the Renaissance, we had consulted on several of history's greatest inventions. Today we operate the largest distributed workforce in the multiverse across 1,000 planets, dozens of timelines, and at least four pocket dimensions legal is still trying to register.</p>
+                </section>
+
+                <section class="about-section" id="about4">
+                    <h2 class="about-heading">Our Clients</h2>
+                    <ul class="about-list">
+                        <li>Early-stage interplanetary startups seeking prototyping, seed funding, and access to our cross-dimensional mentor network.</li>
+                        <li>Galactic enterprises looking to disrupt their own industries before a rival civilisation does it for them.</li>
+                        <li>Planetary councils requiring neutral innovation consulting on public infrastructure, defence, or dimensional border policy.</li>
+                        <li>Independent inventors and lone geniuses with ideas too large — or too strange — for conventional institutions to accommodate.</li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- SERVICES PANEL -->
+    <div class="panel" id="panel3">
+        <div class="services-page">
+
+            <!-- BAR 1: PRODUCTS -->
+            <div class="svc-bar svc-bar-1">
+                <div class="svc-bar-label">Products</div>
+                <div class="svc-product-item active" data-product="hackathon">Hackathon</div>
+                <div class="svc-product-item" data-product="forensics">Forensics</div>
+                <div class="svc-product-item" data-product="hacking">Hacking</div>
+            </div>
+
+            <!-- BAR 2: SCOPE (slides open on product select) -->
+            <div class="svc-bar svc-bar-2" id="svcBar2">
+                <div class="svc-bar-label">Scope</div>
+                <div class="svc-scope-item active" data-scope="city">City</div>
+                <div class="svc-scope-item" data-scope="country">Country</div>
+                <div class="svc-scope-item" data-scope="planet">Planet</div>
+                <div class="svc-scope-item" data-scope="galaxy">Galaxy</div>
+                <div class="svc-scope-item" data-scope="universe">Universe</div>
+                <div class="svc-scope-item" data-scope="multiverse">Multiverse</div>
+            </div>
+
+            <!-- BAR 3: INFO DISPLAY -->
+            <div class="svc-info" id="svcInfo">
+                <div class="svc-info-upper">
+                    <div class="svc-info-upper-row">
+                        <div class="svc-info-name" id="svcName"></div>
+                        <button class="svc-purchase-btn" id="svcPurchaseBtn">Purchase</button>
+                    </div>
+                    <div class="svc-info-price" id="svcPrice"></div>
+                    <div class="svc-info-tags" id="svcTags"></div>
+                </div>
+                <div class="svc-info-divider"></div>
+                <div class="svc-info-lower">
+                    <p class="svc-info-desc" id="svcDesc"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- CONTACT PANEL -->
+    <div class="panel" id="panel4">
+        <div class="contact-page">
+            <div class="contact-inner">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">We operate across 1,000 planets. Someone will get back to you.</p>
+
+                <div class="contact-field">
+                    <label class="contact-label" for="cName">Name</label>
+                    <input class="contact-input" id="cName" type="text" placeholder="Your name" autocomplete="off">
+                </div>
+
+                <div class="contact-field">
+                    <label class="contact-label" for="cCompany">Company</label>
+                    <input class="contact-input" id="cCompany" type="text" placeholder="Your company or organisation" autocomplete="off">
+                </div>
+
+                <div class="contact-field">
+                    <label class="contact-label" for="cEmail">Email</label>
+                    <input class="contact-input" id="cEmail" type="email" placeholder="your@email.universe" autocomplete="off">
+                </div>
+
+                <div class="contact-field">
+                    <label class="contact-label" for="cMessage">Message</label>
+                    <textarea class="contact-input contact-textarea" id="cMessage" placeholder="Tell us about your project, your planet, or your problem."></textarea>
+                </div>
+
+                <div class="contact-actions">
+                    <button class="contact-send-btn" id="contactSendBtn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- USER / LOGIN PANEL -->
+    <div class="panel" id="panel5">
+        <div class="login-page">
+            <div class="login-card">
+
+                <div class="login-logo">⬡</div>
+                <h2 class="login-title">HackathonCorp</h2>
+                <p class="login-subtitle">Sign in to your account</p>
+
+                <div class="login-field">
+                    <label class="login-label" for="lEmail">Email</label>
+                    <input class="login-input" id="lEmail" type="email" placeholder="your@email.universe" autocomplete="off">
+                </div>
+
+                <div class="login-field">
+                    <label class="login-label" for="lPassword">Password</label>
+                    <input class="login-input" id="lPassword" type="password" placeholder="••••••••••••">
+                </div>
+
+                <div class="login-row">
+                    <label class="login-remember">
+                        <input type="checkbox" id="lRemember" class="login-checkbox">
+                        <span class="login-checkmark"></span>
+                        <span class="login-remember-text">Remember me</span>
+                    </label>
+                    <button class="login-forgot-btn" type="button">Forgot password?</button>
+                </div>
+
+                <button class="login-btn" type="button">Login</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- HIDDEN FUN STUFF PANEL -->
+    <div class="panel" id="panel6">
+        <div class="game-page" id="gamePage">
+
+            <!-- LEFT AD -->
+            <div class="game-ad game-ad-left">
+                <div class="ad-sponsored">Sponsored</div>
+                <div class="ad-eyebrow">LIMITED TIME</div>
+                <div class="ad-brand">WARP<br>FUEL<br>CORP</div>
+                <div class="ad-headline">40% OFF<br>DARK MATTER<br>FUEL CELLS</div>
+                <div class="ad-sub">Ships to all 1,000 planets.<br>Free delivery over ∞cr.</div>
+                <div class="ad-divider"></div>
+                <div class="ad-price">FROM <span>₿ 0.04</span></div>
+                <button class="ad-btn">Shop Now →</button>
+                <div class="ad-fine">*Offer valid while universes last. HackathonCorp is not responsible for dimensional side effects.</div>
+            </div>
+
+            <!-- CENTRE: SCORE BAR + SQUARE ARENA -->
+            <div class="game-center">
+                <div class="game-score-bar">
+                    <span class="game-score-label">SCORE</span>
+                    <span class="game-score-val" id="gameScore">0</span>
+                    <span class="game-best-label">BEST</span>
+                    <span class="game-best-val" id="gameBest">0</span>
+                </div>
+                <div class="game-arena-wrap">
+                    <div class="game-arena" id="gameArena">
+                        <div class="game-circle" id="gameCircle">◉</div>
+                    </div>
+                </div>
+                <div class="game-overlay" id="gameOverlay">
+                    <div class="game-over-title" id="gameOverTitle">** GAME OVER **</div>
+                    <div class="game-over-score" id="gameOverScore"></div>
+                    <button class="game-retry-btn" id="gameRetryBtn">[ RETRY ]</button>
+                </div>
+            </div>
+
+            <!-- RIGHT AD -->
+            <div class="game-ad game-ad-right">
+                <div class="ad-sponsored">Sponsored</div>
+                <div class="ad-eyebrow">NEW RELEASE</div>
+                <div class="ad-brand">NEURO<br>LINK<br>PRO</div>
+                <div class="ad-headline">UPGRADE<br>YOUR<br>BRAIN</div>
+                <div class="ad-sub">v9.2 firmware. Now includes ESP module &amp; galaxy-wide WiFi.</div>
+                <div class="ad-divider"></div>
+                <div class="ad-price">FROM <span>₡ 12,000</span></div>
+                <button class="ad-btn">Learn More →</button>
+                <div class="ad-fine">*Side effects may include omniscience. Consult a neural technician before installing.</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    Copyright &copy; 2026 Hackathon Inc. &nbsp;·&nbsp; All lefts opened &nbsp;·&nbsp; Made in Heaven.
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
